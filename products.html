@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/index.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <title>PlanterZ | Termékek</title>
+  </head>
+  <body>
+    <div class="top-header-container">
+      <section class="top-header">
+        <div class="left">
+          <div class="top-header-item">
+            <i class="fa-solid fa-phone" style="color: #000000"></i>
+            <a href="tel:06301234567">+36-30-123-4567</a>
+          </div>
+          <div class="top-header-item">
+            <i class="fa-solid fa-envelope" style="color: #000000"></i>
+            <a href="mailto:pelda@gmail.com">pelda@gmail.com</a>
+          </div>
+          <div class="top-header-item">
+            <i class="fa-solid fa-location-dot" style="color: #000000"></i>
+            <p>Tiszatenyő, HU</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top-header-item">
+            <i class="fa-solid fa-user" style="color: #000000"></i>
+            <a href="login.html"> Bejelentkezés/Regisztráció</a>
+          </div>
+          <div class="top-header-cart">
+            <button id="cartBtn" type="submit">
+              <div class="bag-icon">
+                <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+              </div>
+            </button>
+            <div id="cartModal" class="crt-modal">
+              <div class="modal-text animate">
+                <span class="close">&times;</span>
+                <h2>A kosara üres</h2>
+                <br />
+                <p>Válogasson különböző, gyönyörű termékek közül.</p>
+                <br />
+                <div class="btn-cart">
+                  <a href="products.html">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Termékek</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <h1>PlanterZ</h1>
+          </a>
+        </div>
+        <div class="hamburger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <ul class="nav-items">
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="products.html">Termékek</a></li>
+          <li><a href="login.html">Saját profil</a></li>
+          <li><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-box-container">
+        <div class="hero-box">
+          <h2>A kiváló minőség eredete</h2>
+          <hr />
+          <h3>
+            Növényeinket gondosan válogatjuk, hogy csak a legtökéletesebbek
+            kerüljenek a választékba. Minőségi termékeink garantálják, hogy Ön
+            egy olyan darabot kap, amely éveken át örömet szerez majd, és
+            otthonában a természet közelében érezheti magát.
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section class="main-gallery">
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/phoenix_canariensis_12-130cm_2.jpeg"
+            alt="Phoenix-palm"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Főnix pálma - Phoneix-canariensis</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Főnix pálma</h2>
+            <br />
+            <p>
+              A Phoenix canariensis / Kanári datolyapálma Főnixpálma, 10-12
+              méter, hazánkban ennél jóval alacso nyabbra, 4-6 méter magasra nő
+              meg. A hatalmas, gömbszerű koronában a szárnyasan összetett
+              levelek felfelé törnek és kecsesen visszahajlanak. Az idős
+              növények leveleinek gerince 3–6 méter hosszú, rajta a lándzsa
+              (toll) alakú levélkék szabályosan, egy síkban állnak, számuk
+              mindkét oldalon elérheti 80-100-at. Gyökerei a pálmák többségénél
+              mélyebbre hatolnak. Szereti a vizet jól áteresztő talajt. A nyári
+              időszakban vízigényes, ezért a forró nyári napokon gyakran kell
+              öntözni. Túlöntözésre érzékenyek, fényigényes. Dézsás növényként
+              kell tartani. Fagyérzékeny! Gyorsan növő, könnyen tartható növény.
+            </p>
+            <div class="price">
+              <span> Ár: 4990.-</span>
+              <span> Raktáron ✅ </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/cham.jpeg"
+            alt="Chamaerops-humilis"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Törpe lószőrpálma - Chamaerops-humilis</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Törpe lószőrpálma</h2>
+            <br />
+            <p>
+              A Chamaerops humilis / Törpe lószőrpálma törpe pálma, 2-3 m
+              magasra növő, lassú növekedésű és zömök, sarjadzó tövű örökzöld
+              pálma. A Földközi-tenger nyugati medencéjében őshonos. Levelei
+              legyezőszerűen szeldeltek, fehér pikkelyszőrösek, a levélnyelek
+              szélei erősen fogazottak. Vízigénye nem túl nagy, a szárazságot
+              jól tűri. A nyári időszakban vízigényes, ezért a forró nyári
+              napokon gyakran kell öntözni. Túlöntözésre érzékenyek.
+              Fényigényes, de a félárnyékot is elviseli. Ha dézsás növényként
+              tartjuk, szükséges a mély, úgynevezett pálmacserép is. Kiültetett
+              növényeket télen takarni kell! Gyorsan növő, könnyen tartható
+              növény.
+            </p>
+            <div class="price">
+              <span> Ár: 8990.-</span>
+              <span> Raktáron ✅ </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/cikasz.jpeg"
+            alt="Cikasz-palm"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Japán cikász - Cycas revoluta</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Japán cikász</h2>
+            <br />
+            <p>
+              A Cycas revoluta / Japán cikász, 2-3 m magasra növő, lassú
+              növekedésű és zömök, sarjadzó tövű örökzöld pálma. Külsőre mintegy
+              a páfrányfák és a pálmák közötti, átmeneti jellegű növénynek
+              tűnik. Vaskos, pikkelyes, csak ritkán elágazó törzse legfeljebb 3
+              m magasra nő. Az első, mintegy öt évben évente csak egy-egy
+              levelet, később évente egy-egy levélkoszorút hoz. Vízigénye nem
+              túl nagy, a szárazságot jól tűri. A nyári időszakban vízigényes,
+              ezért a forró nyári napokon gyakran kell öntözni. Túlöntözésre
+              érzékenyek. A mészmentes talajt kedveli. A napos helyen tartott
+              cikászok gyorsabban és nagyobbra nőnek, de a fiatal egyedek a tűző
+              napon elpusztulnak. Dézsás növényként tartható. Az idősebb
+              (többnyire a legalább 25 éves) cikászok időnként tősarjakat
+              fejlesztenek, ezekről (késő télen, kora tavasszal) vegetatívan
+              szaporíthatók. Fagyérzékeny!
+            </p>
+            <div class="price">
+              <span> Ár: 3990.-</span>
+              <span> Raktáron 🚫 </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/citrom x limon.jpeg"
+            alt="Citrus-x-limon"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Citromfa - Citrus x limon</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Citromfa</h2>
+            <br />
+            <p>
+              A citromfa (Citrus x limon) 3-6 m magasra megnövő fa. Átellenesen
+              álló sima, fényes levelei fiatal korban vörösesek, majd mélyzöldek
+              a hajtáscsúcsok felé, és lejjebb világosabbak. A vöröses
+              virágrügyekből fehér, leggyakrabban ötszirmú, illatos virágok
+              fejlődnek. A citrom hidegre jóval érzékenyebb, mint a narancs. -
+              4-5 fokon leveleit lehullajtja. - 6 fokon a fás részek maradandó
+              károsodást szenvednek. Bár nedves klímán is fejlődik, a gyümölcs
+              tárolhatósága csökken, minősége romlik. A silány, száraz talajt is
+              tolerálja. Gyengén savanyú, jó vízgazdálkodású talajon fejlődik a
+              legjobban. A frissen vásárolt citromfát ültessük 25 cm átmérőjű
+              edénybe. Legalkalmasabb a vízelvezetővel ellátott műanyag cserép.
+              Könnyű, tartós, és átültetéskor a gyökérlabda könnyen kiüthető
+              belőle. További drénnyílásokat létrehozva, bizton elkerülhetjük a
+              víz pangását. Alapos beöntözés után tegyük déli, nyugati
+              kitettségű, napos helyre. A huzatot kerüljük. Ha a szobából a
+              kertbe, teraszra visszük, fokozatosan szoktassuk az erősebb
+              napfényhez. Öntözzünk rendszeresen. Sose hagyjuk kiszáradni a
+              talajt. A megfelelő páratartalmat vízpermetezéssel biztosíthatjuk.
+            </p>
+            <div class="price">
+              <span> Ár: 9990.-</span>
+              <span> Raktáron ✅ </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/finger_lime.jpeg"
+            alt="Finger lime"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Kaviár lime - Finger lime</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Kaviár lime</h2>
+            <br />
+            <p>
+              Sötétzöld kis levelei, és apró tövisek vannak az ágain. Virágja
+              fehér, és nagyon illatos. Termése hengeres formájú, zöld színű, 6-
+              8 cm hosszú és 2-3 cm széles. Húsa kaviárra emlékeztető apró
+              bogyószerű. Savanykás, fűszeres íze van. Kora tavasszal virágzik.
+              A fagytűrő képessége alacsony, -1 fokig bírja. A frissen vásárolt
+              Ausztrál kaviár citromot ültessük 25 cm átmérőjű edénybe.
+              Legalkalmasabb a vízelvezetővel ellátott műanyag cserép. Könnyű,
+              tartós, és átültetéskor a gyökérlabda könnyen kiüthető belőle.
+              További drénnyílásokat létrehozva, bizton elkerülhetjük a víz
+              pangását. Alapos beöntözés után tegyük déli, nyugati kitettségű,
+              napos helyre. A huzatot kerüljük. Ha a szobából a kertbe, teraszra
+              visszük, fokozatosan szoktassuk az erősebb napfényhez. Öntözzünk
+              rendszeresen. Sose hagyjuk kiszáradni a talajt. A megfelelő
+              páratartalmat vízpermetezéssel biztosíthatjuk.
+            </p>
+            <div class="price">
+              <span> Ár: 10990.-</span>
+              <span> Raktáron 🚫 </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/kumquat.jpeg"
+            alt="Kumquat"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Kumquat - Törpemandarin</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Kumquat</h2>
+            <br />
+            <p>
+              A Citrus fortunella margarita / Törpemandarin Kumquat, mandarino
+              cinese, alacsony termetű örökzöld fa. Sötétzöld, fényes levelei
+              lándzsa alakúak, kb. 10 cm hosszúak. Hímnős, édes illatú, fehér
+              kis virágai egyesével vagy 4 tagú fürtben fejlődnek. Bogyótermése,
+              elliptikus vagy hosszúkás tojás alakú, éretten narancsszínű, 2–3
+              cm-esek. Savas (tőzeges) talajt kell biztosítani számára. Napos
+              részen tartsuk. A pangó víz gyökérrothadáshoz, majd a növény
+              halálához vezethet. A téli lombhullás, egy természetes folyamat.
+              Teleltetéskor, minél alacsonyabb a téli hőmérséklet annál
+              csekélyebb fényviszonyok elegendőek. Nálunk csak dézsás növényként
+              nevelhető. Metszeni bármikor lehet. Átültetni tavasszal, 2-3
+              évente szükséges. Termését héjastul, magostul, egészben
+              fogyasztják, íze is a citrusokat idézi: húsa savanykás, héja
+              édeskés aromájú.
+            </p>
+            <div class="price">
+              <span> Ár: 10990.-</span>
+              <span> Raktáron 🚫 </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/monstera.webp"
+            alt="Monstera"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Könnyezőpálma - Monstera deliciosa</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Könnyezőpálma</h2>
+            <br />
+            <p>
+              A könnyezőpálma a világos helyeket kedveli, ekkor lesz szép, friss
+              zöld a levele. A félárnyékos és árnyékos környezetben is jól érzi
+              magát, de ekkor veszít ékes színéből, kevésbé lesz mutatós. A tűző
+              naptól óvjuk, hiszen, ha sokáig van közvetlen napfényen levelei
+              elszáradhatnak és lehullhatnak.A könnyezőpálma hőigénye egészen
+              átlagosnak mondható, a kb. 18-20 fokos meleget kedveli egész
+              évben. Ne tegyük olyan helyre, ahol huzat, vagy gyors
+              hőmérsékletváltozás érheti, tehát közvetlen az ablak mellett,
+              hűtőtest közelében kizárva! Úgy tud gyorsan fejlődni, ha a talaja
+              is viszonylag meleg, fontos, hogy tartsuk be ezt az igényét.A
+              tápoldatozás is fontos szerepet játszik abban, hogy növényünk
+              megkapja a megfelelő mennyiségű tápanyagot. Tavasztól nyár végéig
+              tápoldatozzuk, kb. kéthetente a megfelelő töménységben az
+              öntözővízhez keverve.
+            </p>
+            <div class="price">
+              <span> Ár: 3990.-</span>
+              <span> Raktáron ✅ </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/plumeria.jpeg"
+            alt="Plumeria"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Pluméria - Frangipáni</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Pluméria</h2>
+            <br />
+            <p>
+              A frangipáni öntözése során fontos a mértékletesség. Tavasszal és
+              főleg nyáron melegben, rendszeresen, de nem túl sok vízzel
+              öntözzük. Semmiképpen se öntözzük túl, mert kirohadnak a növény
+              gyökerei. Tavasszal és nyáron az öntözések során tápoldatot is
+              adjunk a növénynek. Novembertől tél végéig tart a növény nyugalmi
+              időszaka ilyenkor elhagyható az öntözés. Elég, csak tavasszal
+              újrakezdeni, amikor megjelennek az első rügyek a növényen, vagy
+              ráncos a növény töve. A pluméria eredeti élőhelyéből adódóan fény
+              és melegigényes növény. Bátran választhatunk számára tűző napos
+              helyeit is. Télen is olyan helyet keressünk számára, ahol legalább
+              12-15 fokos a hőmérséklet. A frangipáni fő díszét öt húsos szirom
+              alkotta, szélkereket formázó változatos színekben pompázó,
+              kellemes illatú virágai, valamint nagyméretű levelei adják.
+            </p>
+            <div class="price">
+              <span> Ár: 6990.-</span>
+              <span> Raktáron ✅ </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/strelitzia-reg.jpeg"
+            alt="Sterlitzia-reginae"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Sárga papagájvirág - Sterlitzia reginae</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Sárga papagájvirág</h2>
+            <br />
+            <p>
+              A Strelitzia reginae / Papagájvirág, 1-1,5 méter magasra növő
+              örökzöld. A nagy levelek közül emelkednek ki a hosszú száron ülő,
+              narancssárga színű, 15 cm átmérőjű, több héten át nyíló virágai.
+              Töve elágazó, rövid ízközökkel. A szárazságot jól viseli, de
+              gyorsan csak nedves talajban fejlődik. Hosszú életű, erőteljesen
+              fejlődő növény. Sok tápanyagot és savanyú talajt igényel. Kedveli
+              a meleget és a napfényt.Az átültetést rosszul tűri, mert ilyenkor
+              a húsos gyökerek könnyen törnek. Fagyérzékeny, ezért csak
+              konténeres növényként tartható. + 10°C felett átteleltethető, de
+              folyamatosan virágzásához magasabb hőmérséklet ajánlott.
+            </p>
+            <div class="price">
+              <span> Ár: 5990.-</span>
+              <span> Raktáron ✅ </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/Strelitzia_nic.jpeg"
+            alt="Sterlitzia-nicolai"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Kék papagájvirág - Sterlitzia nicolai</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Kék papagájvirág</h2>
+            <br />
+            <p>
+              A kék papagájvirág (Strelitzia nicolai) Dél-Afrika szubtrópusi
+              területein őshonos nagyméretű évelő növény, mely akár 1,5 méteres
+              leveleivel, valamint kék színű virágaival egyaránt díszít.
+              Különleges alakú kék virága sötétkék fellevélből, fehér
+              csészelevelekből és kékeslila „nyelvből” áll. A kék papagájvirág
+              akkor fejlődik megfelelően, ha világos, napos helyen tartjuk, de
+              néha félárnyékot is kap, és a nap legmelegebb időszakában
+              valamelyest árnyékoljuk, így védve a tűző naptól. Tavasztól őszig
+              a szabadban tartható, az előbbieket is szem előtt tartva.
+            </p>
+            <div class="price">
+              <span> Ár: 7990.-</span>
+              <span> Raktáron 🚫 </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/yucca_rostrata.jpeg"
+            alt="Yucca rostrata"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Csőrös yucca - Yucca rostrata</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="myModal modal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Csőrös yucca</h2>
+            <br />
+            <p>
+              A Yucca Rostrata / Pálmaliliom, a pálmaliliom (Yucca) nemzetségbe
+              tartozó, az amerikai egyesült államokbeli Texasban, illetve a
+              mexikói Chihuahuában és Coahuilában honos növényfaj. Törzse 4,5
+              méter magasra növő, lassú növekedésű, tőlevélrózsás örökzöld,
+              tetején levélüstökkel. Levelei vékonyak, merevek, legfeljebb 60 cm
+              hosszúak, és ritkán több mint 15 mm szélesek, végük felé
+              fokozatosan elvékonyodnak és hegyes csúcsban végződnek. Fehér, 1
+              méter magas, kehely alakú virágait augusztusban hozza. Nevet
+              pálmákra emlékeztető levélüstökük és liliomokéra hasonlító fehéres
+              virágaik után kapták.
+            </p>
+            <div class="price">
+              <span> Ár: 7990.-</span>
+              <span> Raktáron 🚫 </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <a href="#">
+          <img
+            src="assets/images/Products-page/yucca-elephantipes.avif"
+            alt="Yucca"
+            width="300"
+            height="300"
+          />
+          <div class="desc">Törzses yucca - Yucca-elephantipes</div>
+        </a>
+        <button class="details-btn myBtn">Részletek</button>
+        <div class="modal myModal">
+          <div class="modal-content animate">
+            <span class="close">&times;</span>
+            <h2>Törzses yucca</h2>
+            <br />
+            <p>
+              A Yucca elephantipes / Óriás jukka Törzses jukka, 6-9 m magasra
+              növő, hazánkban szobanövényként tartott, tőlevélrózsás örökzöld.
+              Levelei kard szerűek. Fehér, kehely alakú virágait augusztusban
+              hozza. Nevet pálmákra emlékeztető levélüstökük és liliomokéra
+              hasonlító fehéres virágaik után kapták. Naphoz szoktatni kell a
+              teleltetés miatt. Laza, meleg helyen fejlődik szépen, nem igényel
+              sok tápot. Szárazságtűrő. Edényes növényként tartható.
+            </p>
+            <div class="price">
+              <span> Ár: 3990.-</span>
+              <span> Raktáron ✅ </span>
+            </div>
+            <div class="add-button">
+              <button type="button" class="cart-button">
+                <span class="button__text">Hozzáadás a kosárhoz</span>
+                <span class="button__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke="currentColor"
+                    height="24"
+                    fill="none"
+                    class="svg"
+                  >
+                    <line y2="19" y1="5" x2="12" x1="12"></line>
+                    <line y2="12" y1="12" x2="19" x1="5"></line>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <div class="flex-container">
+            <div class="text-content">
+              <h2>Nyitvatartás</h2>
+              <p>
+                Hétfő: 0:00-0:00
+                <br />
+                Kedd: 0:00-0:00
+                <br />
+                Szerda: 0:00-0:00
+                <br />
+                Csütörök: 0:00-0:00
+                <br />
+                Péntek: 0:00-0:00
+                <br />
+                Szombat: ZÁRVA
+                <br />
+                Vasárnap: ZÁRVA
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-top-middle">
+          <div class="flex-container">
+            <div class="social">
+              <a href="https://www.facebook.com/" target="_blank" class="fbook"
+                ><i class="fa-brands fa-facebook" style="color: #000000"></i
+                ><span>Facebook</span></a
+              >
+              <a href="https://www.twitter.com/" target="_blank" class="twitter"
+                ><i class="fa-brands fa-x-twitter" style="color: #000000"></i
+                ><span>Twitter</span></a
+              >
+              <a href="https://www.youtube.com/" target="_blank" class="ytube"
+                ><i class="fa-brands fa-youtube" style="color: #000000"></i
+                ><span>YouTube</span></a
+              >
+              <a href="https://www.instagram.com/" target="_blank" class="insta"
+                ><i class="fa-brands fa-instagram" style="color: #000000"></i
+                ><span>Instagram</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-top-right">
+          <div class="flex-container">
+            <i class="fa-solid fa-envelope" style="color: #000000"></i>
+            <p>pelda@gmail.com</p>
+          </div>
+          <div class="flex-container">
+            <i class="fa-solid fa-phone" style="color: #000000"></i>
+            <p>+36-30-123-4567</p>
+          </div>
+          <div class="flex-container">
+            <i class="fa-solid fa-globe" style="color: #000000"></i>
+            <p>www.planterZ.com</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>Copyright © Minden jog fenntartva.</p>
+      </div>
+    </footer>
+  </body>
+</html>

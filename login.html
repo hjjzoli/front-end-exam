@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>PlanterZ | Bejelentkezés/Regisztráció</title>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="top-header-container">
+      <section class="top-header">
+        <div class="left">
+          <div class="top-header-item">
+            <i class="fa-solid fa-phone" style="color: #000000"></i>
+            <a href="tel:06301234567">+36-30-123-4567</a>
+          </div>
+          <div class="top-header-item">
+            <i class="fa-solid fa-envelope" style="color: #000000"></i>
+            <a href="mailto:pelda@gmail.com">pelda@gmail.com</a>
+          </div>
+          <div class="top-header-item">
+            <i class="fa-solid fa-location-dot" style="color: #000000"></i>
+            <p>Tiszatenyő, HU</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top-header-item">
+            <i class="fa-solid fa-user" style="color: #000000"></i>
+            <a href="login.html"> Bejelentkezés/Regisztráció</a>
+          </div>
+          <div class="top-header-cart">
+            <button id="cartBtn" type="submit">
+              <div class="bag-icon">
+                <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+              </div>
+            </button>
+            <div id="cartModal" class="crt-modal">
+              <div class="modal-text animate">
+                <span class="close">&times;</span>
+                <h2>A kosara üres</h2>
+                <br>
+                <p>Válogasson különböző, gyönyörű termékek közül.</p>
+                <br>
+                <div class="btn-cart">
+                  <a href="products.html">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Termékek</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <h1>PlanterZ</h1>
+          </a>
+        </div>
+        <div class="hamburger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <ul class="nav-items">
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="products.html">Termékek</a></li>
+          <li><a href="login.html">Saját profil</a></li>
+          <li><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main-container">
+      <div class="form-container">
+        <p class="title">Bejelentkezés</p>
+        <form id="form" class="form">
+          <input
+            type="email"
+            class="input"
+            name="email"
+            placeholder="E-mail"
+            autocomplete="email"
+          />
+          <input
+            type="password"
+            class="input"
+            name="password"
+            placeholder="Jelszó"
+          />
+          <p class="page-link">
+            <span class="page-link-label">Elfelejtett jelszó</span>
+          </p>
+          <button type="submit" class="login-btn">Bejelentkezés</button>
+        </form>
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          style="margin: 0"
+          style="width: auto"
+          type="submit" class="reg-btn"
+        >
+          Regisztráció
+        </button>
+        <div id="id01" class="modal">
+          <form class="modal-content animate">
+            <div class="container">
+              <label class="name" for="name"><b>Név</b></label>
+              <input
+                type="text"
+                placeholder="Név"
+                id="name"
+                name="name"
+                required
+                autocomplete="additional-name"
+              />
+
+              <label for="email"><b>E-mail</b></label>
+              <input
+                type="text"
+                placeholder="E-mail"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+              />
+
+              <label for="password"><b>Jelszó</b></label>
+              <input
+                type="password"
+                placeholder="Jelszó"
+                id="password"
+                name="password"
+                required
+              />
+
+              <label for="password-req"><b>Jelszó megerősítés</b></label>
+              <input
+                type="password"
+                placeholder="Jelszó megerősítés"
+                name="password"
+                id="password-req"
+                required
+              />
+              <div class="sign-button">
+                <button class="sub-button" type="submit">Regisztráció</button>
+              </div>
+            </div>
+            <div class="container" style="background-color: #f1f1f1">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+              >
+                Vissza
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <div class="flex-container">
+            <div class="text-content">
+              <h2>Nyitvatartás</h2>
+              <p>
+                Hétfő: 0:00-0:00
+                <br />
+                Kedd: 0:00-0:00
+                <br />
+                Szerda: 0:00-0:00
+                <br />
+                Csütörök: 0:00-0:00
+                <br />
+                Péntek: 0:00-0:00
+                <br />
+                Szombat: ZÁRVA
+                <br />
+                Vasárnap: ZÁRVA
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-top-middle">
+          <div class="flex-container">
+            <div class="social">
+              <a href="https://www.facebook.com/" target="_blank" class="fbook"
+                ><i class="fa-brands fa-facebook" style="color: #000000"></i
+                ><span>Facebook</span></a
+              >
+              <a href="https://www.twitter.com/" target="_blank" class="twitter"
+                ><i class="fa-brands fa-x-twitter" style="color: #000000"></i
+                ><span>Twitter</span></a
+              >
+              <a href="https://www.youtube.com/" target="_blank" class="ytube"
+                ><i class="fa-brands fa-youtube" style="color: #000000"></i
+                ><span>YouTube</span></a
+              >
+              <a href="https://www.instagram.com/" target="_blank" class="insta"
+                ><i class="fa-brands fa-instagram" style="color: #000000"></i
+                ><span>Instagram</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-top-right">
+          <div class="flex-container">
+            <i class="fa-solid fa-envelope" style="color: #000000"></i>
+            <p>pelda@gmail.com</p>
+          </div>
+          <div class="flex-container">
+            <i class="fa-solid fa-phone" style="color: #000000"></i>
+            <p>+36-30-123-4567</p>
+          </div>
+          <div class="flex-container">
+            <i class="fa-solid fa-globe" style="color: #000000"></i>
+            <p>www.planterZ.com</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>Copyright © Minden jog fenntartva.</p>
+      </div>
+    </footer>
+    <script>
+      var modal = document.getElementById("id01");
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

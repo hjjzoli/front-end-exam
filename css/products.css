@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 300px;
+  background: url("../assets/images/banners/hero-prod.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 50px;
+}
+
+.hero-box-container {
+  width: min(90%, 1140px);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--second-text-color);
+  height: 100%;
+}
+
+.hero-box hr {
+  width: 60%;
+}
+
+.hero-box h2 {
+  font-size: 27px;
+}
+
+.hero-box h3 {
+  padding-top: 20px;
+  font-size: 22px;
+}
+
+.main-gallery {
+  width: min(90%, 1140px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 2rem;
+  margin-bottom: 50px;
+}
+
+.gallery {
+  margin: 10px;
+  width: 300px;
+  height: 330px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.gallery img {
+  width: 298px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.modal {
+  display: none;
+  cursor: auto;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  padding: 50px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #a51f1f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.animate {
+  animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+.price{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.add-button{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-button {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+}
+
+.cart-button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.cart-button .button__text {
+  transform: translateX(10px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.cart-button .button__icon {
+  position: absolute;
+  transform: translateX(159px);
+  height: 100%;
+  width: 40px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.cart-button:hover {
+  background: #34974d;
+}
+
+.cart-button:hover .button__text {
+  color: transparent;
+}
+
+.cart-button:hover .button__icon {
+  transform: translateX(0);
+}
+
+.cart-button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.details-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 300px;
+  background-color: var(--bg-footer);
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+}
+
+.details-btn:hover {
+  background-color: #57695c;
+  transform: scale(1.1);
+}
+
+.details-btn:active {
+  background-color: #809787;
+  transition: all 0.25s;
+  transform: scale(0.98);
+}
+
+@media (max-width: 556px) {
+  .hero {
+    width: 100%;
+    height: 400px;
+    background: url("../assets/images/hero-prod.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 50px;
+  }
+
+  .main-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
